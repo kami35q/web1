@@ -58,6 +58,13 @@ section h2 {
   color: #333;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
 footer {
   background-color: #333;
   color: white;
