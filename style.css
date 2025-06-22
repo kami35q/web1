@@ -3,23 +3,22 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #f5f7fa;
-  color: #333;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 header {
-  background-color: #333;
+  background: none; /* Arka plan yok */
   color: white;
-  padding: 20px;
+  padding: 0; /* Boşluk yok */
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: static; /* Sayfaya sabitlenmez */
+  z-index: auto;
 }
 
 header h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 20px 0; /* Üst-alt boşluk eklendi */
 }
 
 nav ul {
@@ -34,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -45,17 +44,17 @@ nav ul li a:hover {
 }
 
 section {
-  background-color: #fff;
+  background-color: #1e1e1e;
   margin: 20px auto;
   max-width: 900px;
   padding: 40px 30px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
   border-bottom: none;
 }
 
 section h2 {
-  color: #333;
+  color: #ffffff;
 }
 
 img {
@@ -63,20 +62,32 @@ img {
   height: auto;
   display: block;
   margin: 10px auto;
+  border-radius: 4px;
 }
 
 footer {
-  background-color: #333;
+  background-color: #1f1f1f;
   color: white;
   text-align: center;
   padding: 10px;
   margin-top: 40px;
 }
 
-/* Responsive Menü */
 @media (max-width: 600px) {
   nav ul li {
     display: block;
     margin: 10px 0;
   }
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1abc9c;
 }
